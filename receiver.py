@@ -1,7 +1,7 @@
 from datetime import datetime
 
 import matplotlib
-matplotlib.use('Agg')
+#matplotlib.use('Agg')
 
 import matplotlib.pyplot as pyplot
 import RPi.GPIO as GPIO

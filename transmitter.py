@@ -22,7 +22,7 @@ def transmit_code(code):
     GPIO.setmode(GPIO.BCM)
     GPIO.setup(TRANSMIT_PIN, GPIO.OUT)
     for t in range(NUM_ATTEMPTS):
-        for i in code:
+        for i in str(code):
             if i == '1':
                 GPIO.output(TRANSMIT_PIN, 1)
                 time.sleep(short_delay)
